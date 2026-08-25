@@ -172,16 +172,19 @@ img {
   padding: 0 22px;
   border-radius: 14px;
   font-weight: 700;
+  text-decoration: none !important;
+  text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover {
   transform: translateY(-1px);
+  text-decoration: none !important;
 }
 
 .btn-primary {
   background: linear-gradient(135deg, var(--primary), var(--primary-2));
-  color: #0b1020;
+  color: #0b1020 !important;
   box-shadow: 0 15px 35px rgba(124, 92, 255, 0.35);
 }
 
@@ -697,6 +700,7 @@ img {
 
 .access-box {
   padding: 30px 26px;
+  margin-top: 22px;
 }
 
 .access-box h3 {
@@ -704,11 +708,68 @@ img {
   font-size: 1.5rem;
 }
 
+.access-box p,
+.info-block p {
+  color: var(--muted);
+  margin: 0 0 1em;
+}
+
 .access-box ul {
   margin: 0;
   padding-left: 18px;
   color: var(--muted);
   line-height: 2;
+}
+
+.access-box li + li {
+  margin-top: 10px;
+}
+
+.access-box a {
+  color: #bfeeff;
+  text-decoration: underline;
+}
+
+.info-block {
+  margin-top: 26px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  background: rgba(8, 14, 22, 0.9);
+}
+
+.admissions-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+
+.admissions-table th,
+.admissions-table td {
+  padding: 16px 18px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.admissions-table th {
+  background: rgba(124, 92, 255, 0.08);
+  color: var(--text);
+  font-size: 0.92rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.admissions-table td {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.admissions-table tbody tr:last-child td {
+  border-bottom: none;
 }
 
 .access-note {
@@ -749,8 +810,31 @@ img {
   font-size: 1.1rem;
 }
 
+.final-intro {
+  margin-top: 18px;
+}
+
+.final-subtitle {
+  margin-bottom: 18px;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.final-note {
+  margin: 22px auto 0;
+  max-width: 760px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.final-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
 .institute-block {
-  margin-top: 30px;
+  margin-top: 34px;
 }
 
 .institute-block h3 {

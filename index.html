@@ -45,8 +45,7 @@
               <span>Gratuito</span>
             </div>
             <div class="cta-row">
-              <a href="#contacto" class="btn btn-primary">Solicita tu admisión</a>
-              <a href="#aprendizaje" class="btn btn-secondary">Descubre más</a>
+              <a href="#contacto" class="btn btn-primary">Solicita tu admisión</a>              
             </div>
           </div>
           <div class="hero-visual" aria-label="Entorno 3D de videojuegos y Meta Quest">
@@ -399,7 +398,7 @@
           <p style="margin-top: 18px; margin-bottom: 20px; color: var(--muted);">
             Rellena la solicitud y entrégala a través del
             <a href="https://sede.gobex.es/SEDE/registroGeneral/registroGeneral.jsf" target="_blank" rel="noopener noreferrer"><u><b>Registro Electrónico de la Junta de Extremadura</b></u></a>
-            antes del 14 de septiembre.
+            antes del 14 de septiembre. Una vez dentro del Registro, en <b>Unidad de Destino</b> elige <b>A11011874-I.E.S. Valle del Jerte</b>.
           </p>
 
           <div class="institute-block">
@@ -459,5 +458,22 @@
         </div>
       </section>
     </main>
+
+    <button class="back-to-top" type="button" aria-label="Volver arriba" title="Volver arriba">
+      <span aria-hidden="true">↑</span>
+      <span>Volver arriba</span>
+    </button>
+
+    <script>
+      const backToTopButton = document.querySelector('.back-to-top');
+
+      window.addEventListener('scroll', () => {
+        backToTopButton.classList.toggle('is-visible', window.scrollY > 500);
+      });
+
+      backToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
   </body>
 </html>
